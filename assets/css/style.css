@@ -31,6 +31,10 @@ h4 {
     text-align:center;
 }
 
+header {
+    margin-bottom:5%;
+}
+
 header img{
     max-width:200px;
     height:auto;
@@ -42,6 +46,8 @@ header img{
     width: 96%;
     margin: 0 auto;
 }
+
+
 
 #buttons{
     width:96%;

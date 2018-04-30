@@ -5,6 +5,8 @@ $(document).ready(function(){
     createButtons();
     getGIFs();
     newTopic();
+ 
+    
 });
 
 
@@ -27,6 +29,7 @@ $("#buttons").on("click", "button", function () {
                 var title = results[i].title;
                 var heading = $("<h2>").text(title);
                 var p = $("<p>").text("Rating: " + rating);
+
                 var comedianGif = $("<img>").attr({
                     "src": results[i].images.fixed_height_still.url,
                     "class": "gif",
@@ -41,6 +44,7 @@ $("#buttons").on("click", "button", function () {
             }
             pauseGifs();
             displayMore(comedian);
+
         });
     });
 }
@@ -109,10 +113,10 @@ function displayMore(comedian){
         method: "GET"
     }).then(function (response) {
             var results = response.data;
-            console.log(queryURL);
+            
             for (var i = 0; i < results.length; i++) {
                 var gifDiv = $("<div class='gif-div'>");
-                var rating = results[i].rating;
+                var rating = results[i].rating.toUpperCase();;
                 var title = results[i].title;
                 var heading = $("<h2>").text(title);
                 var p = $("<p>").text("Rating: " + rating);
@@ -126,8 +130,11 @@ function displayMore(comedian){
 
                 $(gifDiv).append(heading, comedianGif, p);
                 $("#gifs").append(gifDiv);
+            
             }
+            pauseGifs();
     });
-   
     $(this).attr("data-clicks", clicks);
+    
 });}
+

@@ -1,0 +1,114 @@
+body {
+    font-size: 16px;
+    background-color: yellow;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 2% 0;
+    font-family: 'Peralta', sans-serif;
+    color:white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+    font-size: 2em;
+    text-align:center;
+    font-weight: bold;
+    font-family: 'Peralta', sans-serif;
+
+    
+}
+h3 {
+    font-size: 1.5em;
+    text-align:center;
+    font-family: 'Peralta', sans-serif;
+}
+h4 {
+    font-size: 1.25em;
+    text-align:center;
+}
+
+header img{
+    max-width:200px;
+    height:auto;
+    display:block;
+    margin: 1% auto;
+}
+
+#container{
+    width: 96%;
+    margin: 0 auto;
+}
+
+#buttons{
+    width:96%;
+    margin: 2% auto;
+    text-align: center;
+}
+
+#buttons button {
+    display: inline-block;
+    width: auto;
+    background-color:white;
+    padding: 2%;
+    font-family: 'Peralta', sans-serif;
+    font-size:1.1em;
+ 
+}
+
+#button-add {
+    width: 96%;
+    display:block;
+    text-align: center;
+    margin: 1% auto;
+}
+
+#gifs {
+    margin: 2% 0;
+}
+
+.gif-div {
+    display:inline-block;
+    float:left;
+    width: 47.5%;
+    padding: 1%;
+    border: 1px black solid;
+    min-height: 375px;
+    margin: 0 auto;
+}
+
+.gif-div img {
+    display: block;
+    margin: 2% auto;
+    max-width:98%;
+
+}
+
+.gif-div p {
+    text-align:center;
+}
+
+#more-gifs {
+    display: block;
+    width: 25%;
+    margin: 3% auto;
+    clear:both;
+    background-color:white;
+    padding: 2%;
+    font-family: 'Peralta', sans-serif;
+    font-size:1.1em;
+}
+
+@media screen and (max-width: 600px) {
+
+    .gif-div {
+        width: 96%;
+        padding: 2%;
+        min-height: 300px;
+  
+    }
+
+}

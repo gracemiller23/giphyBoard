@@ -75,7 +75,6 @@ header img{
     float:left;
     width: 47.5%;
     padding: 1%;
-    border: 1px black solid;
     min-height: 375px;
     margin: 0 auto;
 }
@@ -102,7 +101,7 @@ header img{
     font-size:1.1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 
     .gif-div {
         width: 96%;

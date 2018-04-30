@@ -23,7 +23,7 @@ $("#buttons").on("click", "button", function () {
             console.log(queryURL);
             for (var i = 0; i < results.length; i++) {
                 var gifDiv = $("<div class='gif-div'>");
-                var rating = results[i].rating;
+                var rating = results[i].rating.toUpperCase();
                 var title = results[i].title;
                 var heading = $("<h2>").text(title);
                 var p = $("<p>").text("Rating: " + rating);
